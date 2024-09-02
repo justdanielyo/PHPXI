@@ -32,8 +32,8 @@
   // Memanggil fungsi hitung_pecahan_lembar
   $lembar = hitung_pecahan_lembar($uang);
   // Menampilkan hasil
-  echo "Uang : Rp. " . number_format($uang, 0, ',', '.') . ".<br>";
-  echo "Lembar Rupiah :<br>";
+  echo "<b>Uang</b> : Rp. " . number_format($uang, 0, ',', '.') . ".<br>";
+  echo "<b>Lembar Rupiah</b> :<br>";
   // Loop untuk menampilkan hasil
   foreach ($lembar as $lembaran) {
     echo $lembaran . "<br>";

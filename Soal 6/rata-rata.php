@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rata-Rata | Html | Php</title>
+  <title>Rata-Rata | HTML | PHP | CSS</title>
 </head>
 <body>
   <?php
@@ -32,7 +32,7 @@
     //Menghitung rata-rata nilai siswa
     $rata_rata = $jumlah_nilai / count($murid['nilai']);
     //Hasil
-    echo "Rata-rata nilai $murid[nama] adalah $rata_rata<br>";
+    echo "<b>Rata-rata nilai</b> <span style='color:blue'>" . $murid['nama'] . "</span> <b>adalah</b> <span style='color:blue'>" . $rata_rata . "</span><br>";
   }
   ?>
 </body>

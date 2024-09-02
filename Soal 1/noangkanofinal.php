@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Noangkanofinal | HTML | PHP</title>
+  <title>Noangkanofinal | HTML | PHP | CSS</title>
 </head>
 <body>
 <?php
@@ -21,10 +21,10 @@ if ($number) {
     // Jika teks mengandung angka, maka tampilkan angka-angka tersebut
     // str_split($number, 1) memecah string menjadi array karakter
     // implode(', ', ...) menggabungkan array karakter menjadi string dengan pemisah ', '
-    echo "Teks mengandung angka : " . implode(', ', str_split($number, 1));
+    echo "<b>Teks mengandung angka</b> : " . implode(', ', str_split($number, 1));
 } else {
     // Jika teks tidak mengandung angka, maka tampilkan pesan
-    echo "Teks tidak mengandung angka.";
+    echo "<b>Teks tidak mengandung angka</b>.";
 }
 ?>
 </body>

@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sesuaikan Kategori | HTML | PHP</title>
+  <title>Sesuaikan Kategori | HTML | PHP | CSS</title>
 </head>
 <body>
   <?php
   $data = [12, 15, 17, 20, 25, 30, 35, 40, 45, 50];
   //Menampilkan list usia
-  echo "List Usia : ";
+  echo "<b>List Usia</b> : ";
   foreach ($data as $usia) {
     //Menampilkan setiap usia dengan koma sebagai pemisah
     echo $usia . ", ";
@@ -31,8 +31,8 @@
     }
   }
   //Hasil
-  echo "Jumlah Kategori Dewasa : " . $dewasa . "<br>";
-  echo "Jumlah Kategori Anak-anak : " . $anak . "<br>";
+  echo "<b>Jumlah Kategori Dewasa</b> : " . $dewasa . "<br>";
+  echo "<b>Jumlah Kategori Anak-anak</b> : " . $anak . "<br>";
   ?>
 </body>
 </html>

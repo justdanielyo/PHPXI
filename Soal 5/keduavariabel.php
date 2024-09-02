@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kedua Variabel | HTML | PHP</title>
+  <title>Kedua Variabel | HTML | PHP | CSS</title>
 </head>
 <body>
   <?php
@@ -18,8 +18,8 @@
   $common_elements_str = implode(', ', $common_elements);
   $unique_elements_str = implode(', ', $unique_elements);
   //Hasil
-  echo "Bilangan yang ada di kedua variabel: $common_elements_str" . "<br>";
-  echo "Bilangan yang tidak ada di kedua variabel: $unique_elements_str";
+  echo "<b>Bilangan yang ada di kedua variabel </b>: <span style='color:blue'>$common_elements_str</span>" . "<br>";
+  echo "<b>Bilangan yang tidak ada di kedua variabel </b>: <span style='color:blue'>$unique_elements_str";
   ?>
 </body>
 </html>

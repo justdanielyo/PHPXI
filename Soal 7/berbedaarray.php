@@ -33,8 +33,8 @@
       echo "Kedua nama memiliki jumlah karakter yang sama";
     }
   }
-  $nama1 = "Fema Flamelina Putri";
-  $nama2 = "Artasya Legina";
+  $nama1 = "<b>Fema Flamelina Putri</b>";
+  $nama2 = "<b>Artasya Legina</b>";
   //Memanggil fungsi bandingkan_nama
   bandingkan_nama($nama1,$nama2);
   ?>

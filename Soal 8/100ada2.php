@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>100 ada 2 | HTML | PHP</title>
+    <title>100 ada 2 | HTML | PHP | CSS</title>
 </head>
 <body>
     <?php
@@ -19,7 +19,7 @@
         }
     }
     //Tampilkan hasil
-    echo "Jumlah angka 100 = " . $jumlah_100;
+    echo "<b>Jumlah angka 100</b> = " . $jumlah_100;
     ?>
 </body>
 </html>

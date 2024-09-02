@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Perkalian Terbalik | Html | PHP</title>
+  <title>Perkalian Terbalik | HTML | PHP| CSS</title>
 </head>
 <body>
   <?php
@@ -15,7 +15,7 @@
     //Loop untuk menghitung perkalian dari 10 sampai 1
     for ($perkalian = 10; $perkalian >= 1; $perkalian--) {
       // Menampilkan hasil perkalian
-      echo "$perkalian x $angka = " . ($angka * $perkalian) . "<br>";
+      echo "<b>$perkalian x $angka</b> = " . "<span style=\"color:blue\">" . ($angka * $perkalian) . "</span> <br>";
     }
     echo "<br>";
   }
