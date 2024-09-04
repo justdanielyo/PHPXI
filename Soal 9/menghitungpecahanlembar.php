@@ -3,7 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Menghitung pecahan lembar | HTML | PHP</title>
+  <title>Menghitung pecahan lembar | HTML | PHP | CSS</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+    .hasil {
+      font-size: 18px;
+      color: #333;
+      margin-bottom: 20px;
+    }
+    .hasil b {
+      color: #337ab7;
+    }
+  </style>
 </head>
 <body>
   <?php
@@ -32,11 +46,11 @@
   // Memanggil fungsi hitung_pecahan_lembar
   $lembar = hitung_pecahan_lembar($uang);
   // Menampilkan hasil
-  echo "<b>Uang</b> : Rp. " . number_format($uang, 0, ',', '.') . ".<br>";
-  echo "<b>Lembar Rupiah</b> :<br>";
+  echo "<p class='hasil'><b>Uang</b> : Rp. " . number_format($uang, 0, ',', '.') . ".</p>";
+  echo "<p class='hasil'><b>Lembar Rupiah</b> :</p>";
   // Loop untuk menampilkan hasil
   foreach ($lembar as $lembaran) {
-    echo $lembaran . "<br>";
+    echo "<p class='hasil'>" . $lembaran . "</p>";
   }
   ?>
 </body>

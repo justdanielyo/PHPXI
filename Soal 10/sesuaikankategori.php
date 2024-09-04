@@ -4,17 +4,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sesuaikan Kategori | HTML | PHP | CSS</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+    .hasil {
+      font-size: 18px;
+      color: #333;
+      margin-bottom: 20px;
+    }
+    .hasil b {
+      color: #337ab7;
+    }
+  </style>
 </head>
 <body>
   <?php
   $data = [12, 15, 17, 20, 25, 30, 35, 40, 45, 50];
   //Menampilkan list usia
-  echo "<b>List Usia</b> : ";
+  echo "<p class='hasil'><b>List Usia</b> : ";
   foreach ($data as $usia) {
     //Menampilkan setiap usia dengan koma sebagai pemisah
     echo $usia . ", ";
   }
-  echo "<br>";
+  echo "</p>";
   //Variabel untuk menghitung jumlah kategori dewasa dan anak-anak
   $dewasa = 0;
   $anak = 0;
@@ -31,8 +45,8 @@
     }
   }
   //Hasil
-  echo "<b>Jumlah Kategori Dewasa</b> : " . $dewasa . "<br>";
-  echo "<b>Jumlah Kategori Anak-anak</b> : " . $anak . "<br>";
+  echo "<p class='hasil'><b>Jumlah Kategori Dewasa</b> : " . $dewasa . "</p>";
+  echo "<p class='hasil'><b>Jumlah Kategori Anak-anak</b> : " . $anak . "</p>";
   ?>
 </body>
 </html>

@@ -4,6 +4,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rata-Rata | HTML | PHP | CSS</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+
+    .hasil {
+      font-size: 18px;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    .hasil b {
+      color: #337ab7;
+    }
+
+    .biru {
+      color: blue;
+    }
+  </style>
 </head>
 <body>
   <?php
@@ -32,7 +52,7 @@
     //Menghitung rata-rata nilai siswa
     $rata_rata = $jumlah_nilai / count($murid['nilai']);
     //Hasil
-    echo "<b>Rata-rata nilai</b> <span style='color:blue'>" . $murid['nama'] . "</span> <b>adalah</b> <span style='color:blue'>" . $rata_rata . "</span><br>";
+    echo "<p class='hasil'><b>Rata-rata nilai</b> <span class='biru'>" . $murid['nama'] . "</span> <b>adalah</b> <span class='biru'>" . number_format($rata_rata, 2) . "</span></p>";
   }
   ?>
 </body>

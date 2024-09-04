@@ -6,6 +6,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Judul halaman -->
   <title>Jika ada 0 = tidakditunjukkan | HTML | PHP | CSS</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+
+    .hasil {
+      font-size: 18px;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    .hasil b {
+      color: #337ab7;
+    }
+
+    .biru {
+      color: blue;
+    }
+  </style>
 </head>
 <body>
   <?php
@@ -22,7 +42,7 @@
           break;
       }
       //Tampilkan hasil perkalian dengan format string dan span warna biru
-      echo "<b>$i x 5</b> = <span style=\"color:blue\">$hasil</span><br>";
+      echo "<p class='hasil'><b>$i x 5</b> = <span class='biru'>$hasil</span></p>";
   }
   ?>
 </body>

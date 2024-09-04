@@ -4,6 +4,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kedua Variabel | HTML | PHP | CSS</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+
+    .hasil {
+      font-size: 18px;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    .hasil b {
+      color: #337ab7;
+    }
+
+    .biru {
+      color: blue;
+    }
+  </style>
 </head>
 <body>
   <?php
@@ -18,8 +38,8 @@
   $common_elements_str = implode(', ', $common_elements);
   $unique_elements_str = implode(', ', $unique_elements);
   //Hasil
-  echo "<b>Bilangan yang ada di kedua variabel </b>: <span style='color:blue'>$common_elements_str</span>" . "<br>";
-  echo "<b>Bilangan yang tidak ada di kedua variabel </b>: <span style='color:blue'>$unique_elements_str";
+  echo "<p class='hasil'><b>Bilangan yang ada di kedua variabel </b>: <span class='biru'>$common_elements_str</span></p>";
+  echo "<p class='hasil'><b>Bilangan yang tidak ada di kedua variabel </b>: <span class='biru'>$unique_elements_str</span></p>";
   ?>
 </body>
 </html>
